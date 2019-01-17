@@ -69,7 +69,7 @@ kicks.color = "blue-grey";
 kicks.size = 9.5;
 kicks.price = 80;
 kicks.buy = "Now I is a cool kid!";
-
+console.log('object kicks - ');
 console.log(kicks);
 
 /* 
@@ -83,6 +83,13 @@ console.log(kicks);
   console.log the object
 */
 
+var plainBox = {}
+
+plainBox.color = 'purple';
+plainBox.size = '19';
+plainBox.contents = [];
+console.log('object plainBox - ');
+console.log(plainBox)
 
 /*
 5. Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -95,7 +102,15 @@ console.log(kicks);
     console.log the object
 */
 
-
+var stockCar = {
+    model: 'Ford',
+    year: 2004,
+    automaticTransmission: false,
+    driver: null,
+    passengers: []
+}
+console.log('object stockCar - ');
+console.log(stockCar);
 /*
 
 6. Add new property inside a function
