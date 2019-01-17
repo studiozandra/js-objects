@@ -127,7 +127,19 @@ console.log(stockCar);
    the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
    the value at `name`, and just the value at `age`.
  */
+var plainPerson ={}
 
+function buildPerson(person, nameString, age){
+    plainPerson.name = nameString;
+    plainPerson.age = age;
+    return person;
+}
+
+completePerson = buildPerson(plainPerson, 'Masa', 33);
+console.log('completePerson - ')
+console.log(completePerson);
+console.log(plainPerson.name);
+console.log(plainPerson.age);
 
 /*
 7. Display values of objects that are inside an array
