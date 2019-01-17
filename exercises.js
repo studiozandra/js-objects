@@ -28,7 +28,7 @@ console.log('test');
  Console.log the following phrase by accessing the appropriate object properties:
  
  
- "My dog `name` is `age` year old and likes to `speak` at strangers."
+ "My dog `name` is `age` year(s) old and likes to `speak` at strangers."
 */ 
 
 
