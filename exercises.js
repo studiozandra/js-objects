@@ -219,11 +219,19 @@ var arrayOfObjects =
         }
       ]
 
-
-console.log(arrayOfObjects[8].total);
 console.log('arrayOfObjects - ');
+function printOrders(orders){  // from solutions.js
+    for(var i = 0; i < orders.length; i++){ // i < orders.length, NOT arrayOfObjects.length
+      console.log("=====");
+      console.log("id: " + orders[i].id);
+      console.log("date: " + orders[i].date);
+      console.log("total: " + orders[i].total);
+    }
+  
+  }
+  printOrders(arrayOfObjects);
 
-function printOrders(order){
+function printOneOrder(order){
     if(order < arrayOfObjects.length){
         console.log("===== ")
         console.log("id: " + arrayOfObjects[order].id)
@@ -234,7 +242,8 @@ function printOrders(order){
     }
      
 }
-printOrders(20);
+console.log('printOneOrder - ');
+printOneOrder(2);
 
 /*
 8. Addition with an object
